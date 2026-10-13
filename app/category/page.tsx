@@ -8,7 +8,7 @@ import { useUser } from "@clerk/nextjs"
 import { createCategory, readCategories, updateCategory, deleteCategory } from "@/lib/actions"
 import { toast } from "react-toastify"
 import EmptyState from "../components/EmptyState"
-import { Category } from "@prisma/client"
+import type { Category } from "@/app/generated/prisma/client"
 import { Trash2, Pencil } from "lucide-react"
 
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useUser } from '@clerk/nextjs'
-import { Product } from '@/types'
+import { Product } from '@/Types'
 import { useState } from 'react'
 import { readProducts, replenishStockWithTransaction } from '@/lib/actions'
 import ProductComponent from './ProductComponent'

@@ -1,7 +1,7 @@
 "use server"
 import { Category } from "@/app/generated/prisma/client"
 import prisma from "@/lib/prisma"
-import { FormDataType, OrderItem, Product, Transaction, ProductOverviewStats , StockSummary } from "@/Types"
+import { ChartData, FormDataType, OrderItem, Product, Transaction, ProductOverviewStats , StockSummary } from "@/Types"
 
 export async function checkAndAddAssociation(email : string, name: string){
     if(!email) return
@@ -497,7 +497,7 @@ export async function getProductOverviewStats(email:string) : Promise<ProductOve
   }
 }
 
-export async function getProductCategoryDistribution(email:string): Promise<StockSummary>{
+export async function getProductCategoryDistribution(email:string): Promise<ChartData[]>{
     try {
       
     if(!email){
@@ -533,7 +533,7 @@ export async function getProductCategoryDistribution(email:string): Promise<Stoc
   
   } catch (error) {
     console.error(error)
-    
+        return []
   }
 }
 

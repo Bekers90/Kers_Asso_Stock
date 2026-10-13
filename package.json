@@ -27,12 +27,19 @@
     "@types/pg": "^8.18.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "daisyui": "^5.5.19",
+    "autoprefixer": "^10.6.1",
+    "daisyui": "^5.7.50",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
+    "postcss": "^8.5.30",
     "prisma": "^7.5.0",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.3.3",
     "tsx": "^4.21.0",
     "typescript": "^5"
+  },
+  "overrides": {
+    "deepmerge-ts": "^8.0.2",
+    "esbuild": "^0.28.2",
+    "mysql2": "^3.24.5"
   }
 }

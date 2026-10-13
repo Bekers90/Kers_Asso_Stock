@@ -7,7 +7,7 @@ import { useUser } from "@clerk/nextjs"
 import ProductImage from "../components/ProductImage"
 import { createProduct, readCategories } from "@/lib/actions"
 import { toast } from "react-toastify"
-import { Category } from "@prisma/client"
+import type { Category } from "@/app/generated/prisma/client"
 import { FormDataType } from "@/Types"
 import { useRouter } from "next/navigation"
 
